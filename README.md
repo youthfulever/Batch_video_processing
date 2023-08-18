@@ -1,4 +1,5 @@
 免费自媒体工具箱，批量视频处理（全网唯一免费的批量视频处理）<br>
+网盘地址：https://pan.baidu.com/s/1syCd5caSzHutL7sZrqN7Fw?pwd=qv26 提取码: qv26 <br>
 功能介绍：<br>
     QQ:1744164434<br>
     点击star，私聊我获取一个功能的源码<br>
