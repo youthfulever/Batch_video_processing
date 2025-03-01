@@ -1,0 +1,90 @@
+[edit]
+accurate_cut_flag = "0"
+start_cut_flag = "0"
+start_cut_time = "0"
+end_cut_flag = "0"
+end_cut_time = "0"
+end_cut_time_1 = "0"
+delogo_flag = "0"
+delog_x = "0"
+delog_y = "0"
+delog_w = "0"
+delog_h = "0"
+crop_flag = "0"
+crop_x = "0"
+crop_y = "0"
+crop_w = "0"
+crop_h = "0"
+ration_flag='0'
+ratio_w="0"
+ratio_h="0"
+padding_color=''
+
+[repeate]
+cut_fps=""
+fps=''
+multi_play_value=1
+mata_flag='1'
+title = ''
+author = ''
+description = ''
+copyright = ''
+cube_flag = '0'
+cube_value = 'data/lut/01温蓝.cube'
+gamma='1'
+brightness='0'
+contrast='1'
+saturation='1'
+mask_flag='0'
+mask_pic_url=''
+mask_trans='0.1'
+
+[ending]
+extension='.mp4'
+ratio_h='1920'
+ratio_w='1080'
+ration_flag="4"
+padding_color=''
+padding_pic='heng.jpg'
+blur_level='8'
+audio_able='0'
+bg_audio_flag='1'
+bg_audio_file='38s.mp3'
+bg_audio_volume='1'
+title_start=''
+title_end=''
+video_start_file=''
+video_end_file=''
+quality='23'
+quality_flag='0'
+
+[setting]
+start = 10
+end = 5
+
+[watermark]
+text_flag='0'
+text='hello'
+font_size=0.5
+text_time_flag='1'
+text_time='3'
+text_x='0.2'
+text_y='0.2'
+pic_flag='0'
+pic_file='heng.jpg'
+pic_size_w='0.1'
+pic_time_flag='1'
+pic_time='3'
+pic_x='0'
+pic_y='0.5'
+gif_flag='0'
+gif_file='test.gif'
+gif_size_w='0.5'
+gif_time_flag='1'
+gif_time='3'
+gif_x='0.5'
+gif_y='0.5'
+
+[alias]
+name = ''
+

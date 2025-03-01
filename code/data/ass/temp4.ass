@@ -1,0 +1,12 @@
+[Script Info]
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 样式1,宋体,88.69035532994924,&H00ffffff,&H64000000,&HD6000000,&&HFF000000,0,0,0,0,100,100,0,0,1,2,0,5,15,15,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,time_not_defined,样式1,,0,0,0,,{\pos(494.61928934010155,1578.8832487309646)}DDDD
+
+    

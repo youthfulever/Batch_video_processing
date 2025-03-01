@@ -1,0 +1,5041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1091</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1091</width>
+    <height>742</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1091</width>
+    <height>742</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="CustomTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>1051</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>590</y>
+      <width>53</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>输出目录</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_out_file">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>586</y>
+      <width>401</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="choose_file">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>585</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_p">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>580</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 10pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>一键处理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop_p">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>580</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 10pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>停止处理</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="gpu_flag">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>585</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>不加速</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NVIDIA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>intel</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>590</y>
+      <width>53</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>GPU加速</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="in_video">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>视频导入</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="in_file">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>文件夹导入</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_table">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 9pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>清空列表</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>1051</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QTableWidget" name="my_table">
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QSplitter" name="splitter">
+         <property name="styleSheet">
+          <string notr="true">QSplitter{
+border:1px solid rgb(211, 211, 211);
+}
+</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="p_edit">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>剪辑</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p_removal">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>消重</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p_watermark">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>水印</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p_ending">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>后期</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p_letter">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>文字</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p_setting">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>配置</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p_mix">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>混剪</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="p_tools">
+             <property name="text">
+              <string>工具</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>399</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QStackedWidget{border:1px solid rgb(211, 211, 211);
+margin-top:-5px;}
+</string>
+         </property>
+         <widget class="QWidget" name="page_edit">
+          <widget class="QCheckBox" name="checkBox_accurate_cut">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>精准分割</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_start">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>去掉片头</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_end">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>80</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>去掉片尾</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_cut">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>110</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>截取</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_water">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>140</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>去除水印</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_crop">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>170</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>视频裁切</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_ratio">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>200</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>分辨率</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>片头片尾分割更精准，时长视频超过五分钟不建议勾选</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>50</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>单位：秒（可以小数1.999S，1s=1000毫秒）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>80</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>单位：秒（可以小数1.999S，1s=1000毫秒）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_start">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>50</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_end">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>80</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_cut_start">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>110</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>110</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>开始：</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>110</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>结束：</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_cut_end">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>110</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>110</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>单位：秒（格式——开始：3  结束：120）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>140</y>
+             <width>16</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>x：</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_water_x">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>140</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>140</y>
+             <width>21</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>y：</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_water_y">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>140</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_water_h">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>140</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>140</y>
+             <width>16</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>w：</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_water_w">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>140</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_20">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>140</y>
+             <width>21</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>h：</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="open_video">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>140</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_crop_buttom">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>170</y>
+             <width>16</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>左：</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_22">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>170</y>
+             <width>16</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>顶：</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_23">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>170</y>
+             <width>21</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>右：</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_crop_left">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_crop_top">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="open_video_2">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>170</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_crop_right">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>170</y>
+             <width>21</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>底：</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_preview">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>250</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>预览</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ratio_h">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>200</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>200</y>
+             <width>16</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>宽</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ratio_w">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>200</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>200</y>
+             <width>21</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>高</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_color">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>200</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>颜色填充</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_color">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>200</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_color">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>200</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>173</y>
+             <width>221</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>选择保留的部分</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_repeate">
+          <widget class="QCheckBox" name="checkBox_filter">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>110</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>高级滤镜</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_fps">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>50</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_fps">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>帧率修改</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>50</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>常见帧率30或60，30已足够</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_cut_fps">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>每秒抽帧</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>20</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>常设置为1或2等  即为一秒删除1或2帧</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_cut_fps">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_filter">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>110</y>
+             <width>111</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_mate">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>170</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>元数据</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>170</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>标题</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_title">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>170</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_des">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_29">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>170</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>作者</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_author">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_30">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>170</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>版权</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_copyright">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>170</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_mask">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>140</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>图片蒙版</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>140</y>
+             <width>101</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>透明度(0-1)</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_trans">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>138</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>0.5</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>522</x>
+             <y>172</y>
+             <width>201</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>若为空，则设置为随机字符串</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_pic_mask">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>140</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_color_video">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>198</y>
+             <width>61</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>颜色</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_gamma">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>200</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_35">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>260</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>饱和度</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_36">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>290</y>
+             <width>31</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>亮度</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_brightness">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>290</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_37">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>230</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>对比度</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_saturation">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>260</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_contrast">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>230</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="repeate_pre">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>330</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>预览</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>200</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>范围0.1-10（原视频为1）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>230</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>范围0—2（原视频为1）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>260</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>范围0—2（原视频为1）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_31">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>290</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>范围-1—1（原视频为0）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_38">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>200</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>伽玛</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_pic_mask">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>140</y>
+             <width>101</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>图片未选定</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_multiplay">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>80</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>视频调速</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_32">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>80</y>
+             <width>121</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>0.5-2（正常速度1）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_multiplay">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>80</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_conf">
+          <widget class="QPushButton" name="use_1">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>30</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>使用配置1</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="save_1">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>70</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>保存配置1</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_name1">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>110</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_name2">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>110</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="use_2">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>30</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>使用配置2</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="save_2">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>70</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>保存配置2</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_name3">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>110</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="use_3">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>30</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>使用配置3</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="save_3">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>70</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>保存配置3</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_name4">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>110</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="use_4">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>30</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>使用配置4</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="save_4">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>70</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>保存配置4</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_name5">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>110</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="use_5">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>30</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>使用配置5</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="save_5">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>70</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>保存配置5</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="use_myconf">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>200</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>使用自定义配置</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="save_myconf">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>240</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>保存自定义配置</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="share_myconf">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>280</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>分享配置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_34">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>140</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>（方便记忆，给每个配置设置别名）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_current_conf">
+           <property name="geometry">
+            <rect>
+             <x>370</x>
+             <y>240</y>
+             <width>281</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+font: 700 12pt &quot;微软雅黑&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>当前配置：临时配置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_59">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>10</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>对前5个模块设置进行记忆，剪辑、消重、水印、后期、文字</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_ending">
+          <widget class="QCheckBox" name="checkBox_extension">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>输出格式</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_preview_ending">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>410</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>预览</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_ending_ration">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>输出分辨率</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_color_ending">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>80</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_color_ending">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>80</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>#000000</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_ending_ration">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>50</y>
+             <width>121</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>1920*1080(16*9)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1080*1920(9*16)</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_padding_pic">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>110</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>图片未选定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_padding_pic">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>110</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>80</y>
+             <width>71</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>颜色填充</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_2">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>110</y>
+             <width>71</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>图片填充</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_3">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>140</y>
+             <width>71</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>模糊填充</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_blur">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>140</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>8</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_46">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>142</y>
+             <width>191</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>设置为1-20比较合适 推荐8</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_4">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>50</y>
+             <width>71</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>不填充</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_extension">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>.mp4</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>.flv</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>.avi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>.mov</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_audio_able">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>180</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>禁用原音频</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_bg_audio_flag">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>210</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>添加背景音乐</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_bg_audio">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>210</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_bg_audio">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>210</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>音乐未选定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_video_start_file">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>240</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_video_start_file">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>240</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>添加片头</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_video_start_file">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>240</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>片头未选定</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_video_end_file">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>270</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>添加片尾</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_video_end_file">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>270</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>片尾未选定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_video_end_file">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>270</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_new_title">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>300</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>改标题</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_title_start">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>300</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_pic_mask_6">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>300</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>原标题</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_title_end">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>300</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_47">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>300</y>
+             <width>281</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>输出标题：( )+原标题+（ ）  不要使用./特殊字符</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_pic_mask_7">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>210</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>音量调节</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_bg_audio_volume">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>210</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_quality">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>330</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>视频质量</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_48">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>332</y>
+             <width>301</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>(0-51)，值越小质量越高，默认23，没要求不建议设置</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_quality">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>330</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>23</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_49">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>360</y>
+             <width>211</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>速度越快，质量越差，默认平衡即可</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_accurate_cut_9">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>360</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>速度与质量</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_filter_4">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>360</y>
+             <width>61</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="currentText">
+            <string>平衡</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>平衡</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>极快</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>很快</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>快</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>慢</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>很慢</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>极慢</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_50">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>212</y>
+             <width>191</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>0-2（正常声音为1）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_53">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>80</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>只推荐1920*1080/1080*1920</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_mix">
+          <widget class="QComboBox" name="comboBox_mix_ration">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>180</y>
+             <width>121</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>1920*1080(16*9)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1080*1920(9*16)</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_mix_ration">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>180</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>输出分辨率</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="start_p_mix">
+           <property name="geometry">
+            <rect>
+             <x>630</x>
+             <y>435</y>
+             <width>75</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 10pt &quot;微软雅黑&quot;;</string>
+           </property>
+           <property name="text">
+            <string>开始混剪</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_current_conf_3">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>20</y>
+             <width>201</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+font: 700 10pt &quot;微软雅黑&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>本页面独立与其他页面</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_mix_min">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>250</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>3</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="mix_min_time">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>250</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>最低时长</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_40">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>252</y>
+             <width>291</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>片段时长， 单位：秒（可以小数1.999S，1s=1000毫秒）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_mix_max">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>250</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>5</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_99">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>220</y>
+             <width>451</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>设置混剪片段的时长，假如要求最低时长比视频还要长，那么按照原视频总长插入</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_100">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>440</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>输出视频个数</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_mix_count">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>440</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>5</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_mix_pic">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>101</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>使用图片素材</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QTableWidget" name="mix_pic_table">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>20</y>
+             <width>111</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>文件名</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QComboBox" name="comboBox_mix_pic">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>20</y>
+             <width>71</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>16*9</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9*16</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QCheckBox" name="mix_audio_able">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>310</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>禁用音频</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="mix_trans_time">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>280</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>转场时长</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_101">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>280</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>单位：秒（转场市场不要超过素材时长）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_mix_trans">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>280</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>0.5</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_pic_add">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>60</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>添加</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_102">
+           <property name="geometry">
+            <rect>
+             <x>182</x>
+             <y>250</y>
+             <width>21</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>——</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_mix_outtime">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>340</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>10</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_103">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>342</y>
+             <width>351</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>最短时间，单位：秒</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="mix_out_time">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>340</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>输出时长</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="open_mix_video">
+           <property name="geometry">
+            <rect>
+             <x>710</x>
+             <y>440</y>
+             <width>60</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 8pt &quot;微软雅黑&quot;;</string>
+           </property>
+           <property name="text">
+            <string>查看视频</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_water">
+          <widget class="QCheckBox" name="checkBox_water_text">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>30</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>文字水印</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_water_text">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>30</y>
+             <width>101</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_water_text">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>30</y>
+             <width>41</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>设置</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_water_pic">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>140</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>图片水印</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_water_pic">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>138</y>
+             <width>41</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>设置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_water_pic">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>140</y>
+             <width>53</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>未选定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_choose_pic">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>138</y>
+             <width>41</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选定</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>60</y>
+             <width>311</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="radioButton_text_start">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>71</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>开头</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_text_all">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>71</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>全部时长</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_text_end">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>20</y>
+              <width>51</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>结尾</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_text_start">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>20</y>
+              <width>31</width>
+              <height>21</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_text_end">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>20</y>
+              <width>31</width>
+              <height>21</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_33">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>80</y>
+             <width>181</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>可以选择前几秒，或者结尾几秒</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>170</y>
+             <width>311</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="radioButton_pic_start">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>51</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>开头</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_pic_all">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>71</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>全部时长</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_pic_end">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>20</y>
+              <width>51</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>结尾</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_pic_start">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>20</y>
+              <width>31</width>
+              <height>21</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_pic_end">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>20</y>
+              <width>31</width>
+              <height>21</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_41">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>190</y>
+             <width>181</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>可以选择前几秒，或者结尾几秒</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_43">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>300</y>
+             <width>181</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>可以选择前几秒，或者结尾几秒</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_choose_gif">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>248</y>
+             <width>41</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_water_gif">
+           <property name="geometry">
+            <rect>
+             <x>304</x>
+             <y>248</y>
+             <width>41</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>设置</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_water_gif">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>250</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>动图贴纸</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_water_gif">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>250</y>
+             <width>53</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>未选定</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>280</y>
+             <width>311</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QRadioButton" name="radioButton_gif_start">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>51</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>开头</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_gif_all">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>71</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>全部时长</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_gif_end">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>20</y>
+              <width>51</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>结尾</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_gif_start">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>20</y>
+              <width>31</width>
+              <height>21</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_gif_end">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>20</y>
+              <width>31</width>
+              <height>21</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_45">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>32</y>
+             <width>361</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>点击设置，修改位置大小，颜色字体已经默认（有需要再添加此功能）</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_51">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>140</y>
+             <width>361</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>点击设置，修改位置大小</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_52">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>250</y>
+             <width>361</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>点击设置，修改位置大小</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_preview_water">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>350</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>预览</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_letter">
+          <widget class="QCheckBox" name="checkBox_letter1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>80</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>文字1</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_letter2">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>110</y>
+             <width>61</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>文字2</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_letter3">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>178</y>
+             <width>61</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>文字3</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter1">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter2">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>110</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter3">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>178</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_color_l1">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>30</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>#ffffff</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_color_l1">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>30</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_color_l2">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>110</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_color_l2">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>110</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>#ffffff</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_color_l3">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>178</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_color_l3">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>178</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>#ffffff</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_pos_size">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>370</y>
+             <width>91</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>大小位置设置</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_font1">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>30</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_font1">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>30</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>宋体</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_font2">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>110</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>宋体</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_font2">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>110</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_font3">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>178</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>宋体</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_font3">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>178</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_106">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>180</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体颜色</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_107">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>112</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体颜色</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_108">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>32</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体颜色</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_109">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>32</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体样式</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_110">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>112</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体样式</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_111">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>180</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体样式</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_preview_letter">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>400</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>预览</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_54">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>340</y>
+             <width>311</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>隐藏bug,不可跳过文字1使用其他，暂未解决</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_55">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>340</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>设置好文字，一起进行大小位置设置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_112">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>252</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体样式</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_font4">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>250</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_letter4">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>250</y>
+             <width>61</width>
+             <height>19</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string>文字4</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_font4">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>250</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>宋体</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_113">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>252</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>字体颜色</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_color_l4">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>250</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>#ffffff</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter4">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>250</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="choose_color_l4">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>250</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_in_form1">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>30</y>
+             <width>71</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>无效果</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>动态浮现</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>拉伸闪入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>淡入淡出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>移动划入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>由大变小</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_114">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>32</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>入场效果</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_in_form2">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>110</y>
+             <width>71</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>无效果</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>动态浮现</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>拉伸闪入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>淡入淡出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>移动划入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>由大变小</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_115">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>112</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>入场效果</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_in_form3">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>180</y>
+             <width>71</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>无效果</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>动态浮现</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>拉伸闪入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>淡入淡出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>移动划入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>由大变小</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_116">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>182</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>入场效果</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_in_form4">
+           <property name="geometry">
+            <rect>
+             <x>680</x>
+             <y>250</y>
+             <width>71</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>无效果</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>动态浮现</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>拉伸闪入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>淡入淡出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>移动划入</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>由大变小</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_117">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>252</y>
+             <width>51</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>入场效果</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_s1">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>68</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_42">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>70</y>
+             <width>401</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>片段时长， 单位：秒（前一个为空则，重头开始，后一个为空则到最后）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_e1">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>68</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_104">
+           <property name="geometry">
+            <rect>
+             <x>222</x>
+             <y>68</y>
+             <width>21</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>——</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_105">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>70</y>
+             <width>51</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>时长设置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_44">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>150</y>
+             <width>401</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>片段时长， 单位：秒（前一个为空则，重头开始，后一个为空则到最后）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_s2">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>148</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_e2">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>148</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_118">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>150</y>
+             <width>51</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>时长设置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_119">
+           <property name="geometry">
+            <rect>
+             <x>222</x>
+             <y>148</y>
+             <width>21</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>——</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_56">
+           <property name="geometry">
+            <rect>
+             <x>328</x>
+             <y>212</y>
+             <width>401</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>片段时长， 单位：秒（前一个为空则，重头开始，后一个为空则到最后）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_s3">
+           <property name="geometry">
+            <rect>
+             <x>168</x>
+             <y>210</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_e3">
+           <property name="geometry">
+            <rect>
+             <x>248</x>
+             <y>210</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_120">
+           <property name="geometry">
+            <rect>
+             <x>108</x>
+             <y>212</y>
+             <width>51</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>时长设置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_121">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>210</y>
+             <width>21</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>——</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_57">
+           <property name="geometry">
+            <rect>
+             <x>328</x>
+             <y>292</y>
+             <width>401</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>片段时长， 单位：秒（前一个为空则，重头开始，后一个为空则到最后）</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_s4">
+           <property name="geometry">
+            <rect>
+             <x>168</x>
+             <y>290</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_letter_e4">
+           <property name="geometry">
+            <rect>
+             <x>248</x>
+             <y>290</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_122">
+           <property name="geometry">
+            <rect>
+             <x>108</x>
+             <y>292</y>
+             <width>51</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>时长设置</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_123">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>290</y>
+             <width>21</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>——</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_58">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>400</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>预览不考虑文字出现时长</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_tool">
+          <widget class="QLineEdit" name="lineEdit_videotogif_to">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>100</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_124">
+           <property name="geometry">
+            <rect>
+             <x>192</x>
+             <y>100</y>
+             <width>21</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>——</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_videotogif_ss">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>100</y>
+             <width>51</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_125">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>100</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>视频转动图</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_60">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>130</y>
+             <width>241</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>单位：秒（可以小数1.999S，1s=1000毫秒）</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videotogif_pre">
+           <property name="geometry">
+            <rect>
+             <x>326</x>
+             <y>100</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>预览</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videotogif_change">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>100</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>转换</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videotogif_file">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>48</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>选取</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_videotogif">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>50</y>
+             <width>311</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+</string>
+           </property>
+           <property name="text">
+            <string>视频未选定</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videotogif_out">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>100</y>
+             <width>71</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>打开文件夹</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_126">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>160</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>音频提取</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videotomp3">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>160</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>提取</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videotomp3_out">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>160</y>
+             <width>71</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>打开文件夹</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_current_conf_4">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>10</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+font: 700 10pt &quot;微软雅黑&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>单个视频处理</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videototext">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>220</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>提取</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_127">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>220</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>文案提取</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videototext_pre">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>220</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>查看</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_videototext_out">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>220</y>
+             <width>71</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>打开文件夹</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_61">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>220</y>
+             <width>241</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+color:grey;</string>
+           </property>
+           <property name="text">
+            <string>在上面导入的文件，可以是视频或者音频</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>590</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+color:grey;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="opendir_p">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>580</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 10pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查看文件</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1091</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header location="global">data/ui/my_QGraphicsView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

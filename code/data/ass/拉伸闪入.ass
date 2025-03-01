@@ -1,0 +1,16 @@
+﻿[Script Info]
+PlayResX: 1920
+PlayResY: 1080
+
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 样式1,华文新魏,70,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,0,5,10,10,10,1
+
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:05.30,样式1,,0,0,0,fx,{\pos(700,540)\an5\alpha&ff&\fscx1356\be10\blur10\bord0\3c&H444444&\t(140,418,\alpha&0&\fscx100\blur0\be0)\t(500,600,\bord2\blur6)\t(4600,5100,\bord0\blur2\be2)\t(5251,5416,\blur10\be10\fscx600\alpha&ff&)}海
+Dialogue: 0,0:00:00.00,0:00:05.30,样式1,,0,0,0,fx,{\pos(770,540)\an5\alpha&ff&\fscx1263\be10\blur10\bord0\3c&H444444&\t(68,447,\alpha&0&\fscx100\blur0\be0)\t(500,600,\bord2\blur6)\t(4600,5100,\bord0\blur2\be2)\t(5185,5514,\blur10\be10\fscx600\alpha&ff&)}阔
+Dialogue: 0,0:00:00.00,0:00:05.30,样式1,,0,0,0,fx,{\pos(840,540)\an5\alpha&ff&\fscx880\be10\blur10\bord0\3c&H444444&\t(11,495,\alpha&0&\fscx100\blur0\be0)\t(500,600,\bord2\blur6)\t(4600,5100,\bord0\blur2\be2)\t(5241,5435,\blur10\be10\fscx600\alpha&ff&)}天
+Dialogue: 0,0:00:00.00,0:00:05.30,样式1,,0,0,0,fx,{\pos(910,540)\an5\alpha&ff&\fscx1483\be10\blur10\bord0\3c&H444444&\t(55,371,\alpha&0&\fscx100\blur0\be0)\t(500,600,\bord2\blur6)\t(4600,5100,\bord0\blur2\be2)\t(5194,5536,\blur10\be10\fscx600\alpha&ff&)}空

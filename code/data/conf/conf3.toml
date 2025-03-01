@@ -1,0 +1,90 @@
+[edit]
+accurate_cut_flag = "0"
+start_cut_flag = "0"
+start_cut_time = "0"
+end_cut_flag = "0"
+end_cut_time = "0"
+end_cut_time_1 = "0"
+delogo_flag = "1"
+delog_x = "1579.89"
+delog_y = "0.0"
+delog_w = "320.91"
+delog_h = "112.46"
+crop_flag = "0"
+crop_x = "122.51"
+crop_y = "47.54"
+crop_w = 334.63
+crop_h = 581.49
+ration_flag = "0"
+ratio_w = "0"
+ratio_h = "0"
+padding_color = ""
+checkBox_ratio = "0"
+
+[repeate]
+cut_fps = ""
+fps = ""
+multi_play_value = "1"
+mata_flag = "0"
+title = ""
+author = ""
+description = ""
+copyright = ""
+cube_flag = "0"
+cube_value = "data/lut/33蓝绿亮色2.cube"
+gamma = "1"
+brightness = "0"
+contrast = "1"
+saturation = "1"
+mask_flag = "0"
+mask_pic_url = "C:/Users/83853/Desktop/py_proj/my_video/shu.jpg"
+mask_trans = "0.9"
+
+[ending]
+extension = ".mp4"
+ratio_h = "1920"
+ratio_w = "1080"
+ration_flag = "3"
+padding_color = "#ffdc97"
+padding_pic = "C:/Users/83853/Desktop/py_proj/my_video/shu.jpg"
+blur_level = "8"
+audio_able = "0"
+bg_audio_flag = "1"
+bg_audio_file = "C:/Users/83853/Desktop/py_proj/my_video/6s.mp3"
+bg_audio_volume = "1"
+title_start = "day"
+title_end = ""
+video_start_file = ""
+video_end_file = ""
+quality = "23"
+quality_flag = "1"
+
+[setting]
+start = 10
+end = 5
+
+[watermark]
+text_flag = "0"
+text = "股份"
+font_size = 0.12944162436548223
+text_time_flag = "0"
+text_time = "3"
+text_x = 0.8357142857142857
+text_y = 0.09644670050761421
+pic_flag = "0"
+pic_file = "C:/Users/83853/Desktop/py_proj/my_video/test.gif"
+pic_size_w = 0.05857142857142857
+pic_time_flag = "0"
+pic_time = "3"
+pic_x = 0.9142857142857143
+pic_y = 0.05583756345177665
+gif_flag = "0"
+gif_file = "C:/Users/83853/Desktop/py_proj/my_video/data/pic/喜欢双击.gif"
+gif_size_w = 0.2857142857142857
+gif_time_flag = "0"
+gif_time = "3"
+gif_x = 0.6142857142857143
+gif_y = 0.3680203045685279
+
+[alias]
+name = ""

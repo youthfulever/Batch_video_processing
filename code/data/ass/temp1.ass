@@ -1,0 +1,19 @@
+[Script Info]
+PlayResX: 1080
+PlayResY: 1920
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 样式1,宋体,88.69035532994924,&H00ffffff,&H64000000,&HD6000000,&&HFF000000,0,0,0,0,100,100,0,0,1,2,0,5,15,15,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,00:00:01.500,00:00:02.000,样式1,,0,0,0,,{\pos(492.18274111675123,1364.4670050761422)\clip(555,1017,625,1017)\t(0,500,\clip(555,1007,625,1017))\blur2}BB
+Dialogue: 1,00:00:01.500,00:00:02.000,样式1,,0,0,0,,{\pos(492.18274111675123,1364.4670050761422)\clip(555,1027,625,1027)\t(0,500,\clip(555,1017,625,1027))\blur2}BB
+Dialogue: 1,00:00:01.500,00:00:02.000,样式1,,0,0,0,,{\pos(492.18274111675123,1364.4670050761422)\clip(555,1037,625,1037)\t(0,500,\clip(555,1027,625,1037))\blur2}BB
+Dialogue: 1,00:00:01.500,00:00:02.000,样式1,,0,0,0,,{\pos(492.18274111675123,1364.4670050761422)\clip(555,1047,625,1047)\t(0,500,\clip(555,1037,625,1047))\blur2}BB
+Dialogue: 1,00:00:01.500,00:00:02.000,样式1,,0,0,0,,{\pos(492.18274111675123,1364.4670050761422)\clip(555,1057,625,1057)\t(0,500,\clip(555,1047,625,1057))\blur2}BB
+Dialogue: 1,00:00:01.500,00:00:02.000,样式1,,0,0,0,,{\pos(492.18274111675123,1364.4670050761422)\clip(555,1067,625,1067)\t(0,500,\clip(555,1057,625,1067))\blur2}BB
+Dialogue: 0,00:00:02.000,00:00:05.000,样式1,,0,0,0,,{\pos(492.18274111675123,1364.4670050761422)\t(0,300,\bord5\blur3)\t(300,800,\bord2\blur1)}BB
+        
+
+    
